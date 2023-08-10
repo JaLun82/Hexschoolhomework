@@ -1,0 +1,290 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrap{
+    font-family: Microsoft JhengHei UI;
+}
+/*表頭*/
+.header-information{
+    background: #f6f6f8;
+    margin: 0 auto;
+    height: 32px;
+    padding-right: 300px;
+    
+}
+.header-information ul{
+    margin-right: 170px;
+    padding-top: 8px;
+    float: right;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+}
+.header-information img{
+    margin:0px 5px ;
+}
+.header-information li{
+    display: flex;
+}
+.header-information a{
+    text-decoration: none;
+    display: block;
+    font-weight: 400;
+}
+.header-information .fb a{
+    color:#4267B2;
+    padding-right: 5px;
+    border-right: 1px solid #ccc;
+    
+}
+.header-information .tw a{
+    color: #1DA1F2;
+}
+.header-menu{
+    width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.header-menu .logo img{
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.header-menu ul{
+    display: flex;
+}
+.header-menu li a{
+    padding: 30px 21px 28px 21px;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #00251a;
+    position: relative;
+}
+.header-menu li a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+.header-menu li a:hover::after {
+    border-bottom: 4px solid #00cc99;
+  }
+/*內容*/
+.content{
+    width: 1920px;
+    margin: 0 auto;
+}
+.content-img{
+    margin-bottom: 60px;
+    position: relative;
+}
+.content .box{
+    width: 1920px;
+    height: 139px;
+    background: rgba(255, 255, 255, 0.15);;
+    position: absolute;
+    top: 125px;
+}
+.content .box-content{
+    position: absolute;
+    top: 152px;
+    left: 498px;
+    color: #1E1E1E;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 120%;
+}
+.content-main{
+    margin: 0px 405px;
+    display: flex;
+	justify-content: space-around;
+	margin-bottom: 30px;
+}
+.content-item{
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+    width: 350px;
+    height: 353px;
+    padding: 20px;
+    text-align: center;
+    margin: 0px 15px;
+}
+.content-item .JQ{
+    margin-top: 48px;
+    margin-bottom: 35px;
+}
+.content-item h2{
+    font-weight: bolder;
+    line-height: 24px;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.content-item p{
+    text-align: left;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 16px;
+}
+.content-table table{
+    width: 920px;
+    height: 305px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.content-table .main td{
+    font-size: 16px;
+    font-weight: 700;
+}
+.content-table .green{
+    color:#0c9;
+    font-weight: 700;
+}
+.content-table th{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 24px;
+}
+.content-table tr{
+    border-bottom: 1px solid #ccc ;
+    text-align: left;
+}
+.content-table td{
+    font-size: 16px;
+    padding:10px 20px;
+}
+/*表尾*/
+.footer form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #E4FFF8 0%, #A2DDCE 100%);
+    text-align: center;
+}
+.footer form  h2{
+    padding: 36px 0px;
+    color: #00251A;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.footer-top{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.footer-top label{
+    color: #00251A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.footer-top-left{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.footer-top-left input[type='text']{
+    width: 351px;
+    height: 38px;
+    margin: 16px 0px;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    background: #fff;
+}
+.footer-top-right{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+.footer-top-right textarea{
+    width: 350px;
+    height: 200px;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    background: #fff;
+}
+.footer-top-bottom{
+    margin: 36px 0px;
+}
+.footer-top-bottom input[type='submit']{
+    width: 159px;
+    height: 38px;
+    border-radius: 3px;
+    border: 1px solid #00251A;
+    background: #00251A;
+    color: #fff;
+}
+
+.footer .footer-bottom{
+    width:1920px;
+    height: 80px;
+    margin: 0 auto;
+}
+.footer-bottom img{
+    padding:22px 0px ;
+    margin-left: 405px;
+}
+.footer-bottom .tel{
+    padding: 16px 0px;
+    margin-right: 405px;
+    float: right;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.footer-bottom .tel span{
+    color: #0c9;
+}
